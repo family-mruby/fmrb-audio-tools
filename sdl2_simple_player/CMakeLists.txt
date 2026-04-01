@@ -5,7 +5,7 @@ set(CMAKE_C_STANDARD 11)
 
 # Paths
 set(APU_EMU_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../../fmruby-graphics-audio/components/apu_emu)
-set(FMSQ_FORMAT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../src)
+set(FMSQ_FORMAT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../nsf2fmsq/src)
 
 # Find SDL2
 find_package(PkgConfig REQUIRED)

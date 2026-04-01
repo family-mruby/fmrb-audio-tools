@@ -61,4 +61,9 @@ end
 desc "Rebuild (clean + build)"
 task :rebuild => [:clean, :build]
 
+namespace :build do
+  desc "Build all tools (Linux)"
+  task :linux => 'build'
+end
+
 task :default => :build

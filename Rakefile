@@ -61,9 +61,17 @@ end
 desc "Rebuild (clean + build)"
 task :rebuild => [:clean, :build]
 
+desc "Full clean (alias for clean)"
+task :clean_all => :clean
+
 namespace :build do
   desc "Build all tools (Linux)"
   task :linux => 'build'
+
+  desc "No-op for ESP32 (host-only tools)"
+  task :esp32 do
+    puts "fmrb-audio-tools: skipped (Linux-only)"
+  end
 end
 
 task :default => :build
